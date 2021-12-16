@@ -1,0 +1,13 @@
+#imageSliderDragContainer {
+  height: 267px;
+  width: 400px;
+  border:2px solid #ccc;
+  margin-left: 50px;
+}
+
+#draggableImageSlider {
+  width: 10px;
+  height: 267px;
+  background-color: #d4ab41;
+  position: absolute;
+}
