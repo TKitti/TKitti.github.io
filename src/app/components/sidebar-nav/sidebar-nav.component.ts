@@ -14,7 +14,7 @@ export class SidebarNavComponent implements OnInit {
   }
 
 
-  toggleNavMenu(event) {
+  toggleNavMenu() {
     document.getElementsByClassName('bar')[0].classList.toggle("bar1");
     document.getElementsByClassName('bar')[1].classList.toggle("bar2");
     document.getElementsByClassName('bar')[2].classList.toggle("bar3");

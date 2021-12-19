@@ -1,6 +1,6 @@
 <nav>
   <div id="nav-button-container" >
-    <div class="nav-toggle-button" (click)="toggleNavMenu($event)">
+    <div class="nav-toggle-button" (click)="toggleNavMenu()">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
@@ -8,11 +8,11 @@
   </div>
   
   <div id="sidenav-links" class="hide-nav-links">
-    <ul >
-      <li><a href="#about">rólam</a></li>
-      <li><a href="#services">szolgáltatások</a></li>
-      <li><a href="#prices">árak</a></li>
-      <li><a href="#contact">kapcsolat</a></li>
+    <ul>
+      <li (click)="toggleNavMenu()"><a href="#about">rólam</a></li>
+      <li (click)="toggleNavMenu()"><a href="#services">szolgáltatások</a></li>
+      <li (click)="toggleNavMenu()"><a href="#prices">árak</a></li>
+      <li (click)="toggleNavMenu()"><a href="#contact">kapcsolat</a></li>
     </ul>
 
     <div class="sidenav-info-container">
