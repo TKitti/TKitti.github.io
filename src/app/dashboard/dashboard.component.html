@@ -1,0 +1,51 @@
+<header>
+  <div class="logos">
+    <img class="logo" src="./../../assets/logo-tooth-only.png" alt="logo">
+    <img class="logo" src="./../../assets/logo-only-text.png" alt="logo">
+  </div>
+
+  <div class="header-info-container">
+    <div class="phone-container">
+      <img class="header-info-icon" src="./../../assets/phone.png" alt="clock">
+      <p>+36 30 555 9898</p>
+    </div>
+
+    <div class="clock-container">
+      <img class="header-info-icon" src="./../../assets/clock.png" alt="clock">
+      <div class="hours-container">
+        <p>Péntek</p>
+        <p>9:00 - 16:00</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div id="dashboard-container">
+  <div class="left-side-content">
+    <ul class="nav-links">
+      <!--<li><a href="#banner">kezdőlap</a></li>-->
+      <li><a href="#about">rólam</a></li>
+      <li><a href="#services">szolgáltatások</a></li>
+      <li><a href="#prices">árak</a></li>
+      <li><a href="#contact">kapcsolat</a></li>
+    </ul>
+
+    <div id="text-slide">
+      <ol class="circle-container" (click)="onCircleClick($event)">
+        <li value="1"><div id="1" class="circle1 circle activeCircle"></div></li>
+        <li value="2"><div id="2" class="circle2 circle"></div></li>
+        <li value="3"><div id="3" class="circle3 circle"></div></li>
+      </ol>
+
+      <p class="service-text">{{ currentTextInTextSlide.value }}</p>
+      <button class="service-details-button">részletek</button>
+    </div>
+  </div>
+  <div id="image-container">
+    <img id="mainsmile" class="hide" src="./../../assets/main-smile.png" alt="smile">
+  </div>
+  
+</div>
+
+<div id="wave"></div>

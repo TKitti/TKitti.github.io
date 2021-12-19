@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 
 import { AngularDraggableModule } from 'angular2-draggable';
 import { BeforeAfterImageSliderComponent } from './before-after-image-slider/before-after-image-slider.component';
+import { SidebarNavComponent } from './sidebar-nav/sidebar-nav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BeforeAfterImageSliderComponent
+    BeforeAfterImageSliderComponent,
+    SidebarNavComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

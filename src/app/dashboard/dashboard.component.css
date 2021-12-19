@@ -1,0 +1,264 @@
+/* ==================== < 768px  =================== */
+
+.nav-links {
+  display: none;
+}
+
+
+/****************************HEADER*******************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #8a888b;
+  height: 30vh;
+  background: #fff3e6;
+  border-bottom: 0.5px white solid;
+}
+
+header p {
+  font-family: monospace;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.logos {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: auto;
+  height: 5.5rem;
+}
+
+.header-info-container {
+  display: none;
+}
+
+
+
+
+/**************************** DASHBOARD *******************/
+
+#dashboard-container {
+  background-image: url('./../../assets/light-bubbles-light-bcg2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+}
+
+.left-side-content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 70vh;
+  padding: 1rem;
+  z-index: 5;
+}
+
+#text-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+#image-container {
+  width: 80%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+
+#image-container:hover {
+  transform: translate(-10px, -10px);
+}
+
+#image-container img {
+  border-radius: 0 0 30% 30%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -1em;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#wave {
+  height: 70px;
+  width: 100%;
+  background: #fff3e6;
+  border-radius: 0 0 40% 40%;
+  position: relative;
+  bottom: 40px;
+}
+
+.circle-container {
+  display: flex;
+  padding: 0px;
+}
+
+.circle-container li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.circle {
+  background: #8a888b;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.activeCircle {
+  opacity: 1;
+}
+
+
+@keyframes slidein-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.service-text {
+  margin: 0;
+  color: #8a888b;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.service-details-button {
+  background: #8a888b;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px 0 rgb(68 54 45 / 50%);
+  color: #fff;
+  width: 200px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.service-details-button:hover {
+  background: #fff;
+  color: #8a888b;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ===================== 768px or wider screen =============================== */
+@media screen and (min-width:768px) {
+  .sidenav {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    padding: 0px;
+    height: 30%;
+  }
+  
+  .nav-links li {
+    list-style-type: none;
+    padding-right: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  
+  .nav-links li a{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #8a888b;
+  }
+  
+  .nav-links li a:hover {
+    background: white;
+    padding: 15px;
+    border-radius: 25px;
+  }
+
+  .circle {
+    height: 1em;
+    width: 1em;
+  }
+
+  .logo {
+    width: auto;
+    height: 5.5rem;
+  }
+
+  .service-text {
+    font-size: 2.5rem;
+  }
+
+  .service-details-button {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* ===================== 1024px or wider screen =============================== */
+@media screen and (min-width:1024px) {
+  header {
+    align-items: center;
+    height: 25vh;
+  }
+
+  .logos {
+    margin: 0;
+  }
+
+  .header-info-container {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 20px;
+    align-self: flex-start;
+  }
+    
+  .header-info-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 10px;
+  }
+  
+  .phone-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .clock-container {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .hours-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
