@@ -1,0 +1,100 @@
+#about {
+  background-image: url('../../../assets/light-bubbles-light-bcg2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  border-radius: 50% 50% 50% 50% / 3% 3% 3% 3%;
+  color: #8a888b;
+  font-size: 1.2rem;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 8%;
+}
+
+.about-left-text {
+  background: bisque;
+  padding: 30px 30px 30px 55px;
+  margin-bottom: 50px;
+}
+
+.about-left-text:hover {
+  transform: translate(-10px, -10px);
+}
+
+.upper {
+  border-radius: 68% 53% 37% 53% / 72% 86% 83% 81%;
+}
+
+.bottom {
+  border-radius: 68% 61% 37% 60% / 67% 86% 83% 78%;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.about-right img {
+  width: 70%;
+  height: auto;
+}
+
+.about-right p {
+  margin: 0;
+}
+
+.beautiful-smile-text {
+  padding: 15px 0;
+}
+
+.niki-name {
+  font-weight: bold;
+  color: #d4ab41;
+  font-size: 1.5em;
+}
+
+.niki-profession {
+  text-align: center;
+}
+
+
+
+
+/* ===================== 768px or wider screen =============================== */
+@media screen and (min-width:768px) {
+  #about {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about-left {
+    width: 50%;
+    padding: 6 8%;
+  }
+
+  .about-right {
+    display: block;
+    width: 50%;
+    padding: 5% 0;
+  }
+
+  .niki-profession {
+    text-align: left;
+  }
+}
+
+
+/* ===================== 1024px or wider screen =============================== */
+@media screen and (min-width:1024px) {
+  .about-left {
+    width: 50%;
+    padding: 0 8%;
+  }
+}
