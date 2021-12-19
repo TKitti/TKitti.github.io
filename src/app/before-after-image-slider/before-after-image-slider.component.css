@@ -1,0 +1,19 @@
+#imageSliderDragContainer {
+  height: 278px;
+  width: 410px;
+  border:2px solid #ccc;
+  margin-left: 50px;
+
+  display: flex;
+}
+
+#draggableImageSlider {
+  width: 10px;
+  height: 278px;
+  background-color: #d4ab41;
+  position: absolute;
+
+  /*left: 255px;    */
+  /* ez nem lesz jó, mert a lap szélétől számolja a 0px-t - a position: absolute miatt
+  de position: relative nem lehet, mert akkor nem látszódik, a képek alatt marad */
+}
