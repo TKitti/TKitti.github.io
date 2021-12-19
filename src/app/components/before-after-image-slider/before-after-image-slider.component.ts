@@ -10,8 +10,8 @@ export class BeforeAfterImageSliderComponent implements OnInit {
   movingOffset = { x: 0, y: 0 };
   endOffset = { x: 0, y: 0 };
   timerForImageSlider;
-  imageURL1 = './../assets/photo1.jfif';
-  imageURL2 = './../assets/photo2.jfif';
+  imageURL1 = './../../../assets/photo1.jfif';
+  imageURL2 = './../../../assets/photo2.jfif';
 
 
   constructor() {}
