@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 55% 53% 48% 47% / 75% 86% 49% 83%;
+}
+
+.container:hover {
+  transform: translate(-10px, -10px);
+}
+
+.icon {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 10px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text {
+  margin: 0 0 20px 0;
+  font-size: 2em;
+  color: #d4ab41;
+}
+
+.text {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #8a888b;
+}

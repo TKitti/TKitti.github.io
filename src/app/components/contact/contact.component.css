@@ -1,0 +1,65 @@
+#contact {
+  background: #fff3e6;
+  border-radius: 50% 50% 50% 50% / 3% 3% 0% 0%;
+}
+
+.map {
+  border-radius: 15px;
+}
+
+.contact-text {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px 0 20px 0;
+  font-size: 2.2em;
+  color: #8a888b;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #8a888b; 
+}
+
+.our-address-text {
+  margin: 0 0 20px 0;
+  font-size: 2em;
+  color: #d4ab41;
+}
+
+.address-text {
+  margin: 0 0 5px 0;
+  font-size: 1.5em;
+}
+
+.contact-elements-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0 80px 0;
+}
+
+  
+/* ===================== 1024px or wider screen =============================== */
+@media screen and (min-width:1024px) {
+  .address-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .map-container {
+    margin-top: 100px;
+  }
+}

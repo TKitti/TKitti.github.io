@@ -8,6 +8,8 @@ import { BeforeAfterImageSliderComponent } from './components/before-after-image
 import { SidebarNavComponent } from './components/sidebar-nav/sidebar-nav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { IconAndShortTextComponent } from './components/icon-and-short-text/icon-and-short-text.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { AboutComponent } from './components/about/about.component';
     BeforeAfterImageSliderComponent,
     SidebarNavComponent,
     DashboardComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent,
+    IconAndShortTextComponent
   ],
   imports: [
     BrowserModule,
