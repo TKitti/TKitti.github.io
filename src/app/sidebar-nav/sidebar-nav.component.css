@@ -41,19 +41,23 @@ nav {
 }
 
 #sidenav-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   background: #dfdede;
   height: 100vh;
   padding: 0;
   margin: 0;
-  transition: opacity 1s ease,
+  /*transition: opacity 1s ease,*/
 }
 
 .hide-nav-links {
-  opacity: 0;
+  /*opacity: 0;*/
+  display: none;
+}
+
+.show-nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #sidenav-links ul {

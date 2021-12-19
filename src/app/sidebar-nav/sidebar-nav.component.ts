@@ -19,7 +19,15 @@ export class SidebarNavComponent implements OnInit {
     document.getElementsByClassName('bar')[1].classList.toggle("bar2");
     document.getElementsByClassName('bar')[2].classList.toggle("bar3");
 
-    document.getElementById("sidenav-links").classList.toggle("hide-nav-links");
+    let sideNavLinksElement = document.getElementById("sidenav-links");
+    if (sideNavLinksElement.classList.contains("hide-nav-links")) {
+      sideNavLinksElement.classList.remove("hide-nav-links");
+      sideNavLinksElement.classList.add("show-nav-links");
+    } else {
+      sideNavLinksElement.classList.remove("show-nav-links");
+      sideNavLinksElement.classList.add("hide-nav-links");
+    }
+
     if (window.pageYOffset > 100) {
       document.getElementById("nav-button-container").classList.add("grey-background");
     } else {

@@ -12,9 +12,9 @@ export class AppComponent {
   onScroll(event) {
     const windowScroll = window.pageYOffset;
     let navButtonContainerElement = document.getElementById("nav-button-container");
-    let opacity = window.getComputedStyle(document.getElementById("sidenav-links")).opacity;
+    let display = window.getComputedStyle(document.getElementById("sidenav-links")).display;
 
-    if (opacity == "0") {
+    if (display == "none") {
       if (windowScroll >= 100) {
         navButtonContainerElement.classList.add("grey-background");
       } else {
