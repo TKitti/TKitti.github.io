@@ -10,6 +10,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { IconAndShortTextComponent } from './components/icon-and-short-text/icon-and-short-text.component';
+import { ServiceListComponent } from './components/service-list/service-list.component';
+import { ServiceComponent } from './components/service/service.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { IconAndShortTextComponent } from './components/icon-and-short-text/icon
     DashboardComponent,
     AboutComponent,
     ContactComponent,
-    IconAndShortTextComponent
+    IconAndShortTextComponent,
+    ServiceListComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<div id="services">
+  <p class="service-text">szolgáltatások</p>
+  
+  <ul class="service-card-container">
+    <li *ngFor="let service of services" class="service-card">
+      <app-service [serviceInfo]="service"></app-service>
+    </li>
+  </ul>
+</div>
