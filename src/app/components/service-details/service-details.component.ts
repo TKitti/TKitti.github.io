@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { DentalServiceService } from 'src/app/services/dental-service.service';
+import { DentalServiceModel } from 'src/app/models/DentalServiceModel';
 
 @Component({
   selector: 'app-service-details',
@@ -7,12 +9,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./service-details.component.css']
 })
 export class ServiceDetailsComponent implements OnInit {
-  type:string;
+  currentService: DentalServiceModel;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private dentalService: DentalServiceService) { }
 
   ngOnInit() {
-    console.log("service id in service details: " + this.route.snapshot.params.id);
+    this.dentalService.getDentalServiceData().subscribe(data => {
+      this.currentService = data.find(service => service.id == this.route.snapshot.params.id);
+    });
   }
-
 }

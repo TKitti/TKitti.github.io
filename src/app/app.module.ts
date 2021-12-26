@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { routes } from './app-routing.module';
 
@@ -35,6 +35,7 @@ import { HomeComponent } from './components/home/home.component';
   imports: [
     BrowserModule,
     AngularDraggableModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
