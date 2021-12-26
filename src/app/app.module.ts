@@ -16,6 +16,7 @@ import { ServiceListComponent } from './components/service-list/service-list.com
 import { ServiceComponent } from './components/service/service.component';
 import { ServiceDetailsComponent } from './components/service-details/service-details.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { HomeComponent } from './components/home/home.component';
     ServiceListComponent,
     ServiceComponent,
     ServiceDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

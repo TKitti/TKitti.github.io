@@ -1,0 +1,73 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #8a888b;
+  height: 30vh;
+  background: #fff3e6;
+  border-bottom: 0.5px white solid;
+}
+
+header p {
+  font-family: monospace;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.logos {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: auto;
+  height: 5.5rem;
+}
+
+.header-info-container {
+  display: none;
+}
+
+
+
+
+/* ===================== 1024px or wider screen =============================== */
+@media screen and (min-width:1024px) {
+  header {
+    align-items: center;
+    height: 25vh;
+  }
+
+  .logos {
+    margin: 0;
+  }
+
+  .header-info-container {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 20px;
+    align-self: flex-start;
+  }
+    
+  .header-info-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 10px;
+  }
+  
+  .phone-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .clock-container {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .hours-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
