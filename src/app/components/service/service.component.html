@@ -14,5 +14,5 @@
 
 <div class="service-container">
   <p class="title">{{ serviceInfo.title }}</p>
-  <p class="details-button">Részletek</p>
+  <a class="details-button" id="{{ serviceInfo.id }}" [routerLink]="['/service', serviceInfo.id]">részletek</a>
 </div>

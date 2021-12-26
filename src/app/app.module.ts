@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { routes } from './app-routing.module';
 
 import { AngularDraggableModule } from 'angular2-draggable';
 import { BeforeAfterImageSliderComponent } from './components/before-after-image-slider/before-after-image-slider.component';
@@ -12,6 +14,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { IconAndShortTextComponent } from './components/icon-and-short-text/icon-and-short-text.component';
 import { ServiceListComponent } from './components/service-list/service-list.component';
 import { ServiceComponent } from './components/service/service.component';
+import { ServiceDetailsComponent } from './components/service-details/service-details.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -24,11 +28,14 @@ import { ServiceComponent } from './components/service/service.component';
     ContactComponent,
     IconAndShortTextComponent,
     ServiceListComponent,
-    ServiceComponent
+    ServiceComponent,
+    ServiceDetailsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AngularDraggableModule
+    AngularDraggableModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
