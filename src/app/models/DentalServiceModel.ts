@@ -3,4 +3,6 @@ export interface DentalServiceModel {
   title: string;
   content: string;
   imageSrc: string;
+  beforeImageSrc: string;
+  afterImageSrc: string;
 }

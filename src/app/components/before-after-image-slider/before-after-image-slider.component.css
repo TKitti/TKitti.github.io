@@ -1,19 +1,38 @@
 #imageSliderDragContainer {
-  height: 278px;
-  width: 410px;
-  border:2px solid #ccc;
-  margin-left: 50px;
-
   display: flex;
+  margin: 40px auto;
+  /*box-shadow: 0 10px 30px 0 rgb(212 171 65);*/
 }
 
 #draggableImageSlider {
-  width: 10px;
-  height: 278px;
-  background-color: #d4ab41;
   position: absolute;
+  width: 10px;
+  background-color: #d4ab41;
+}
 
-  /*left: 255px;    */
-  /* ez nem lesz jó, mert a lap szélétől számolja a 0px-t - a position: absolute miatt
-  de position: relative nem lehet, mert akkor nem látszódik, a képek alatt marad */
+#draggableImageSlider::before {
+  content: "⯇";
+  color: #d4ab41;
+  font-weight: 700;
+  top: calc(50% - 30px);
+  left: calc(50% - 40px);
+  line-height: 48px;
+  font-size: 40px;
+  padding: 0 0 0 0;
+  position: absolute;
+  text-align: center;
+}
+
+#draggableImageSlider::after {
+  content: "⯈";   /* html code: &#11208; */
+  color: #d4ab41;
+  font-weight: 700;
+  top: calc(50% - 30px);
+  left: calc(50% - 20px);
+  line-height: 48px;
+  font-size: 40px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 24px;
+  position: absolute;
+  text-align: center;
 }

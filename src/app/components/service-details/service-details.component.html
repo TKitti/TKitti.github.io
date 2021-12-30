@@ -1,4 +1,20 @@
 <app-sidebar-nav class="sidenav"></app-sidebar-nav>
 <app-header></app-header>
 
-<p *ngIf="currentService">{{ currentService.title }}</p>
+<div class="container">
+  <div *ngIf="currentService">
+    <p class="title">{{ currentService.title }}</p>
+
+    <div class="sub-container">
+      <div class="image-container">
+        <img src="{{ currentService.imageSrc }}" alt="service">
+      </div>
+      <div>
+        <p class="content">{{ currentService.content }}</p>
+        <a class="prices-button" href="#prices">árak</a>
+      </div>
+    </div>
+
+    <app-before-after-image-slider class="slider" [beforeImg]="currentService.beforeImageSrc" [afterImg]="currentService.afterImageSrc"></app-before-after-image-slider>
+  </div>
+</div>

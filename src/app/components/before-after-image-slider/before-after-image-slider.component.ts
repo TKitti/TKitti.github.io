@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-before-after-image-slider',
@@ -6,18 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./before-after-image-slider.component.css']
 })
 export class BeforeAfterImageSliderComponent implements OnInit {
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.calculateWidthsAndHeights();
+    this.initImageSlider();
+  }
+
+  @Input() beforeImg: string;
+  @Input() afterImg: string;
+
   inBounds = true;
   movingOffset = { x: 0, y: 0 };
   endOffset = { x: 0, y: 0 };
   timerForImageSlider;
-  imageURL1 = './../../../assets/photo1.jfif';
-  imageURL2 = './../../../assets/photo2.jfif';
+  image1Element;
+  image2Element;
+  containerNewWidth;
 
 
   constructor() {}
 
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.calculateWidthsAndHeights();
+  }
 
 
   onImageSliderStart(event) {
@@ -36,39 +48,57 @@ export class BeforeAfterImageSliderComponent implements OnInit {
   onImageSliderMoveEnd(event) {
     this.endOffset.x = event.x;
     this.endOffset.y = event.y;
-    console.log(event.x);
-    console.log(event.y);
   }
 
 
-
-
-  removeChildren(parent) {
-    let canvasElements = document.getElementsByTagName("canvas");
+  calculateWidthsAndHeights() {
+    let containerOriginalWidth = document.getElementsByClassName("container")[0].getBoundingClientRect().width;
+    let dragContainerElement = document.getElementById("imageSliderDragContainer");
+    let sliderElement = document.getElementById("draggableImageSlider");
     
-    // visszafele kell számoljon, mert ha 0-val kezdené, az első loop körben eltávolítja a 0. elemet (hiszen i=0),
-    // aztán a második körben az '1'-es indexű elemet távolítaná el, hiszen az i=1, de az a második elem már nincs benne
-    // mert az első loop kör után már csak egy elem maradt
-    for (let i = canvasElements.length - 1; i >= 0; i--) {
-      parent.removeChild(canvasElements[i]);
+
+    // when multiplying by 0.66, it gives an aspect ratio of 3:2 for the image
+    if (containerOriginalWidth > 400) {
+      this.containerNewWidth = 400;
+      dragContainerElement.style.width = "400px";
+      dragContainerElement.style.height = (400 * 0.66) + "px";
+      sliderElement.style.height = (400 * 0.66) - 1 + "px";
+
+      //slider has position:absolute style to be displayed above the images
+      //therefore it's left:0 value is at the left side of the screen, not the left side of the draggable container
+      //so we have to use the containerOriginalWidth to set the slider in the middle of the page
+      sliderElement.style.left = (containerOriginalWidth / 2) + 5 + "px";
+    } else {
+      this.containerNewWidth = containerOriginalWidth;
+      dragContainerElement.style.width = this.containerNewWidth + "px";
+      dragContainerElement.style.height = (this.containerNewWidth * 0.66) + "px";
+      sliderElement.style.height = (this.containerNewWidth * 0.66) - 1 + "px";
+      sliderElement.style.left = (containerOriginalWidth / 2) + 5 + "px";
     }
-  };
+    
+
+    this.image1Element = document.getElementById('image1');
+    this.image1Element.setAttribute('src', this.beforeImg);
+    this.image1Element.style.width = (this.containerNewWidth - 1) / 2 + "px";
+    this.image2Element = document.getElementById('image2');
+    this.image2Element.setAttribute('src', this.afterImg);
+    this.image2Element.style.width = (this.containerNewWidth -1) / 2 + "px";
+  }
 
 
   initImageSlider() {
     this.timerForImageSlider = setInterval(() => {
-      let image1Element = document.getElementById("image1");
-      let image2Element = document.getElementById("image2");
+      //the slider is placed in the middle of the draggable container
+      //therefore the offset:0 is in the middle of the draggable container, not the left side of the draggable container
+      let image1NewWidth = this.movingOffset.x + (this.containerNewWidth / 2);
+      let image2NewWidth = (this.containerNewWidth / 2) - this.movingOffset.x;
       
-      let image1NewWidth = this.movingOffset.x;
-      let image2NewWidth = 410 - this.movingOffset.x;
-
-      if (image1Element && image1Element.style) {
-        image1Element.style.width = image1NewWidth + "px";
+      if (this.image1Element && this.image1Element.style) {
+        this.image1Element.style.width = image1NewWidth + "px";
       }
 
-      if (image2Element && image2Element.style) {
-        image2Element.style.width = image2NewWidth + "px";
+      if (this.image2Element && this.image2Element.style) {
+        this.image2Element.style.width = image2NewWidth + "px";
       }
     }, 50);
   }
