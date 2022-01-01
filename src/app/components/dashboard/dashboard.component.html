@@ -11,15 +11,22 @@
       <li><a href="#contact">kapcsolat</a></li>
     </ul>
 
-    <div id="text-slide">
+    <div id="text-slide" *ngIf="texts">
       <ol class="circle-container" (click)="onCircleClick($event)">
         <li value="1"><div id="1" class="circle1 circle activeCircle"></div></li>
         <li value="2"><div id="2" class="circle2 circle"></div></li>
         <li value="3"><div id="3" class="circle3 circle"></div></li>
+        <li value="4"><div id="4" class="circle4 circle"></div></li>
+        <li value="5"><div id="5" class="circle5 circle"></div></li>
+        <li value="6"><div id="6" class="circle6 circle"></div></li>
       </ol>
 
-      <p class="service-text">{{ currentTextInTextSlide.value }}</p>
-      <button class="service-details-button">részletek</button>
+      <p class="service-text" *ngIf="currentTextInTextSlide">{{ currentTextInTextSlide.value }}</p>
+      <button 
+        class="service-details-button" 
+        *ngIf="currentTextInTextSlide" 
+        [routerLink]="['/service', currentTextInTextSlide.serviceId]"
+      >részletek</button>
     </div>
   </div>
   <div id="image-container">

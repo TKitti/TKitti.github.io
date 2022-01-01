@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
+import { DentalServiceService } from 'src/app/services/dental-service.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,20 +9,28 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 export class DashboardComponent implements OnInit {
   counter: number;
   timer: any;
-  texts = [
-    { id: 1, value: "fogkőeltávolítás"},
-    { id: 2, value: "fehérítés"},
-    { id: 3, value: "polírozás"},
-  ];
-  currentTextInTextSlide = this.texts[0];
-
+  
+  texts = [];
+  currentTextInTextSlide;
 
   
-  constructor(private htmlElement: ElementRef) {}
+  constructor(private htmlElement: ElementRef, private dentalService: DentalServiceService) {}
 
   ngOnInit() {
     setTimeout(this.showMainImageDelayed, 1000);
-    this.initTimer(this.texts);
+    
+
+    this.dentalService.getDentalServiceData().subscribe(data => {
+      let counter = 0;
+      data.forEach(service => {
+        counter++
+        this.texts.push({id: counter, serviceId: service.id, value: service.title});
+      });
+      this.currentTextInTextSlide = this.texts[0];
+
+      //only start text slide timer when data is here
+      this.initTimer(this.texts);
+    });
   }
 
 
