@@ -10,4 +10,5 @@ html, body {
   overflow-x: hidden;
   /* this property is to remove the white column
   appearing on the right side in mobile version */
+  font-family: 'Roboto', sans-serif;
 }
