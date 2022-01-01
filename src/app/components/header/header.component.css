@@ -18,6 +18,10 @@ header p {
   margin-bottom: 40px;
 }
 
+.logos:hover {
+  cursor: pointer;
+}
+
 .logo {
   width: auto;
   height: 5.5rem;
