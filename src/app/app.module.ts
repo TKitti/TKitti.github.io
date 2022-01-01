@@ -20,6 +20,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { PriceComponent } from './components/price/price.component';
 import { PriceCardComponent } from './components/price-card/price-card.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     PriceComponent,
     PriceCardComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
