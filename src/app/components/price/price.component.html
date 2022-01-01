@@ -1,0 +1,8 @@
+<app-sidebar-nav class="sidenav"></app-sidebar-nav>
+<app-header></app-header>
+
+<ul class="price-card-container">
+  <li *ngFor="let price of prices" class="price-card">
+    <app-price-card [priceInfo]="price"></app-price-card>
+  </li>
+</ul>

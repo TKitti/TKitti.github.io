@@ -17,6 +17,8 @@ import { ServiceComponent } from './components/service/service.component';
 import { ServiceDetailsComponent } from './components/service-details/service-details.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { PriceComponent } from './components/price/price.component';
+import { PriceCardComponent } from './components/price-card/price-card.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { HeaderComponent } from './components/header/header.component';
     ServiceComponent,
     ServiceDetailsComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    PriceComponent,
+    PriceCardComponent
   ],
   imports: [
     BrowserModule,

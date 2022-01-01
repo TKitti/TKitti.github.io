@@ -1,0 +1,11 @@
+<div 
+  class="container" 
+  id="{{ priceInfo.id }}" 
+  [routerLink]="priceInfo.hasServiceDescription ? ['/service', priceInfo.id] : []"
+>
+
+  <img src="../../../assets/{{ priceInfo.icon }}" class="tooth-icon" alt="tooth">
+  <p class="service">{{ priceInfo.service }}</p>
+  <p class="price">{{ priceInfo.price }},- Ft</p>
+  
+</div>

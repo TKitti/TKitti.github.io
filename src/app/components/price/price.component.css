@@ -1,0 +1,33 @@
+.price-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.price-card {
+  margin: 0 15px 10px 15px;
+  list-style-type: none;
+  width: 250px;
+  background-color: #fff3e6;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform .2s; /* Animation */
+}
+
+.price-card:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+/* ===================== 768px or wider screen =============================== */
+@media screen and (min-width:768px) {
+  .sidenav {
+    display: none;
+  }
+}
