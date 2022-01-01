@@ -19,6 +19,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PriceComponent } from './components/price/price.component';
 import { PriceCardComponent } from './components/price-card/price-card.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { PriceCardComponent } from './components/price-card/price-card.component
     HomeComponent,
     HeaderComponent,
     PriceComponent,
-    PriceCardComponent
+    PriceCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

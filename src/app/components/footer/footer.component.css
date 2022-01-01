@@ -1,0 +1,9 @@
+.contact-elements-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0 80px 0;
+  background-color: #fff3e6;
+  border-radius: 50% 50% 50% 50% / 3% 3% 0% 0%;
+}

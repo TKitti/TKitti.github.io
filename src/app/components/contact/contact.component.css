@@ -1,6 +1,7 @@
 #contact {
   background: #fff3e6;
   border-radius: 50% 50% 50% 50% / 3% 3% 0% 0%;
+  margin-bottom: -20px; /* footer has rounded top, without minus margin, there is unnecessary white space between contact and footer */
 }
 
 .map {
@@ -43,13 +44,7 @@
   font-size: 1.5em;
 }
 
-.contact-elements-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 50px 0 80px 0;
-}
+
 
   
 /* ===================== 1024px or wider screen =============================== */

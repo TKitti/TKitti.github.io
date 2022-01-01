@@ -1,7 +1,7 @@
 #imageSliderDragContainer {
   display: flex;
-  margin: 40px auto;
-  /*box-shadow: 0 10px 30px 0 rgb(212 171 65);*/
+  margin: 100px auto;
+  box-shadow: 0 10px 30px 0 rgb(212 171 65);
 }
 
 #draggableImageSlider {
