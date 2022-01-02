@@ -5,7 +5,8 @@
 }
 
 .map {
-  border-radius: 15px;
+  border-radius: 15%;
+  width: 80%;
 }
 
 .contact-text {
@@ -56,5 +57,14 @@
 
   .map-container {
     margin-top: 100px;
+  }
+
+  .map {
+    width: 50%;
+    margin: 0 5%;
+  }
+
+  .map-container {
+    width: 40%;
   }
 }
