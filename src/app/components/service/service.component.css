@@ -29,7 +29,7 @@
 
 
 .image-container {
-  margin: 0 15px 15px 15px;
+  margin: 0 8% 8% 8%;
 }
 
 img {
@@ -81,4 +81,13 @@ img:hover {
   background: #fff;
   color: #8a888b;
   cursor: pointer;
+}
+
+
+
+/* ===================== 768px or wider screen =============================== */
+@media screen and (min-width:768px) {
+  .image-container {
+    margin: 0;
+  }
 }

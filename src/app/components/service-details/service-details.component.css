@@ -6,7 +6,7 @@
   text-align: center;
   text-transform: uppercase;
   padding: 50px 0 20px 0;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #8a888b;
 }
 
@@ -46,6 +46,20 @@ img {
 
 
 
+/* ===================== 450px or wider screen =============================== */
+@media screen and (min-width:450px) {
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 400px;
+  }
+}
+
+
+
 
 /* ===================== 768px or wider screen =============================== */
 @media screen and (min-width:768px) {
@@ -61,7 +75,11 @@ img {
     width: 80%;
     margin: 30px auto;
   }
+}
 
+
+/* ===================== 1024px or wider screen =============================== */
+@media screen and (min-width:1024px) {
   .image-container {
     float: left;
     margin: 0 5% 5% 0;
@@ -70,8 +88,4 @@ img {
   .content {
     margin: 0 0 30px 0;
   }
-
-  img {
-    max-width: 400px;
-  } 
 }

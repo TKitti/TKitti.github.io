@@ -30,4 +30,8 @@
   .sidenav {
     display: none;
   }
+
+  .price-card-container {
+    width: 90%;
+  }
 }

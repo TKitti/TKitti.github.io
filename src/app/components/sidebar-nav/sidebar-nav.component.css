@@ -45,6 +45,7 @@ nav {
   height: 100vh;
   padding: 0;
   margin: 0;
+  overflow: scroll;
   /*transition: opacity 1s ease,*/
 }
 
@@ -63,13 +64,14 @@ nav {
 #sidenav-links ul {
   list-style-type: none;
   width: 100%;
+  overflow: scroll;
 }
 
 #sidenav-links a {
   display: block;
-  padding: 5%;
+  padding: 3%;
   background: #dfdede;
-  font-size: 28px;
+  font-size: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -107,7 +109,7 @@ nav {
 .clock-container {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .hours-container {

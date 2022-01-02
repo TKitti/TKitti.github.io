@@ -1,5 +1,5 @@
 #about {
-  background-image: url('../../../assets/light-bubbles-light-bcg2.png');
+  background-image: url('../../../assets/background-with-bubbles-1.png');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
@@ -51,7 +51,8 @@
 }
 
 .beautiful-smile-text {
-  padding: 15px 0;
+  padding: 15px;
+  text-align: center;
 }
 
 .niki-name {
@@ -83,6 +84,11 @@
     display: block;
     width: 50%;
     padding: 5% 0;
+  }
+
+  .beautiful-smile-text {
+    padding: 15px 0;
+    text-align: left;
   }
 
   .niki-profession {

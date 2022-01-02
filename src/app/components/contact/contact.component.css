@@ -1,5 +1,8 @@
 #contact {
-  background: #fff3e6;
+  background-image: url('../../../assets/background-with-bubbles-2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
   border-radius: 50% 50% 50% 50% / 3% 3% 0% 0%;
   margin-bottom: -20px; /* footer has rounded top, without minus margin, there is unnecessary white space between contact and footer */
 }
