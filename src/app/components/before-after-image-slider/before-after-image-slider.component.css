@@ -11,7 +11,7 @@
 }
 
 #draggableImageSlider::before {
-  content: "⯇";
+  content: "\2BC7";
   color: #d4ab41;
   font-weight: 700;
   top: calc(50% - 30px);
@@ -24,7 +24,7 @@
 }
 
 #draggableImageSlider::after {
-  content: "⯈";   /* html code: &#11208; */
+  content: "\2BC8";
   color: #d4ab41;
   font-weight: 700;
   top: calc(50% - 30px);

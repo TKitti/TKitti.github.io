@@ -100,6 +100,6 @@ export class BeforeAfterImageSliderComponent implements OnInit {
       if (this.image2Element && this.image2Element.style) {
         this.image2Element.style.width = image2NewWidth + "px";
       }
-    }, 50);
+    }, 5);
   }
 }
