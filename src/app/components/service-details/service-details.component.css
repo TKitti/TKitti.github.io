@@ -10,6 +10,12 @@
   color: #8a888b;
 }
 
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -48,11 +54,6 @@ img {
 
 /* ===================== 450px or wider screen =============================== */
 @media screen and (min-width:450px) {
-  .image-container {
-    display: flex;
-    justify-content: center;
-  }
-
   img {
     max-width: 400px;
   }
@@ -73,19 +74,28 @@ img {
 
   .sub-container {
     width: 80%;
-    margin: 30px auto;
+    margin: 0 auto;
   }
 }
 
 
 /* ===================== 1024px or wider screen =============================== */
 @media screen and (min-width:1024px) {
-  .image-container {
-    float: left;
-    margin: 0 5% 5% 0;
-  }
-  
   .content {
     margin: 0 0 30px 0;
+  }
+
+  .sub-container {
+    margin: 30px auto;
+    flex-direction: row;
+  }
+
+  .image-container {
+    width: 30%;
+    margin: 0 5% 5% 0;
+  }
+
+  .content-container {
+    width: 65%;
   }
 }

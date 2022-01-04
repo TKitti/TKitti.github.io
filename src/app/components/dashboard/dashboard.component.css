@@ -11,6 +11,7 @@
   background-attachment: fixed;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   z-index: 2;
   position: relative;
@@ -21,8 +22,6 @@
 .left-side-content {
   display: flex;
   flex-direction: column;
-  align-self: center;
-  height: 70vh;
   padding: 1rem;
   z-index: 5;
 }
@@ -38,8 +37,8 @@
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
-  position: absolute;
   right: 0;
+  margin-right: 5%;
 }
 
 #image-container:hover {
@@ -143,6 +142,10 @@
 
 /* ===================== 768px or wider screen =============================== */
 @media screen and (min-width:768px) {
+  .left-side-content {
+    height: 50vh;
+  }
+  
   .nav-links {
     display: flex;
     padding: 0px;
@@ -179,5 +182,44 @@
 
   .service-details-button {
     font-size: 1.1rem;
+  }
+}
+
+
+
+
+/* ===================== 1024px or wider screen =============================== */
+@media screen and (min-width:1024px) {
+  #dashboard-container {
+    flex-direction: row;
+  }
+
+  .left-side-content {
+    align-self: center;
+    height: 70vh;
+  }
+
+  #image-container {
+    position: absolute;
+  }
+}
+
+
+
+
+
+
+/* ===================== 1200px or wider screen =============================== */
+@media screen and (min-width:1200px) {
+  .left-side-content {
+    margin-left: 8%
+  }
+}
+
+
+/* ===================== 1400px or wider screen =============================== */
+@media screen and (min-width:1400px) {
+  #image-container {
+    margin-right: 15%
   }
 }

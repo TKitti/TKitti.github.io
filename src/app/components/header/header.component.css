@@ -85,3 +85,19 @@ header p {
     flex-direction: column;
   }
 }
+
+
+/* ===================== 1200px or wider screen =============================== */
+@media screen and (min-width:1200px) {
+  .logos {
+    margin-left: 8%
+  }
+}
+
+
+/* ===================== 1400px or wider screen =============================== */
+@media screen and (min-width:1400px) {
+  .header-info-container {
+    margin-right: 5%
+  }
+}

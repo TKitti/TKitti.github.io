@@ -34,3 +34,11 @@
     border-radius: 25px;
   }
 }
+
+
+/* ===================== 1200px or wider screen =============================== */
+@media screen and (min-width:1200px) {
+  .nav-links {
+    padding-left: 8%
+  }
+}
