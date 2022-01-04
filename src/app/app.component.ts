@@ -22,4 +22,10 @@ export class AppComponent {
       }
     }
   }
+
+  onActivate(event) {
+    if (event.constructor.name == "ServiceDetailsComponent" || event.constructor.name ==  "PriceComponent") {
+      window.scroll(0,0);
+    }
+  }
 }
