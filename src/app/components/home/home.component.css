@@ -1,3 +1,44 @@
+.filler-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.image-container {
+  max-height: 300px;
+  max-width: 300px;
+  margin: 20px;
+  border-radius: 57% 53% 48% 72% / 59% 65% 65% 75%;
+  background: #d4ab41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 12px 0 rgb(68 54 45 / 50%);
+  transition: transform 1s ease-in-out; /* Animation */
+}
+
+.image-container:hover {
+  transform: rotate(20deg);
+}
+
+img {
+  width: 65%;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px 0 rgb(68 54 45 / 50%);
+  transition: transform .2s; /* Animation */
+}
+
+img:hover {
+  transform: rotate(15deg) scale(1.1);
+  filter: brightness(110%);
+}
+
+
+
+
+
 /* ===================== 768px or wider screen =============================== */
 @media screen and (min-width:768px) {
   .sidenav {
