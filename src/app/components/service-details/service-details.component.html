@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <app-before-after-image-slider class="slider" [beforeImg]="currentService.beforeImageSrc" [afterImg]="currentService.afterImageSrc"></app-before-after-image-slider>
+    <app-before-after-image-slider *ngIf="currentService.beforeImageSrc" class="slider" [beforeImg]="currentService.beforeImageSrc" [afterImg]="currentService.afterImageSrc"></app-before-after-image-slider>
   </div>
 </div>
 
