@@ -1,5 +1,6 @@
 <div id="imageSliderDragContainer" #myBounds>
-  <div 
+  
+  <i class="fas fa-angle-right fa-angle-left"
     id="draggableImageSlider" 
     ngDraggable 
     lockAxis='y' 
@@ -10,7 +11,7 @@
     (movingOffset)="onImageSliderMoving($event)" 
     (endOffset)="onImageSliderMoveEnd($event)" 
     [preventDefaultEvent]="true" 
-  ></div>
+  ></i>
 
   <img id="image1" src="" style="object-fit: cover; object-position: 0 0;" />
   <img id="image2" src="" style="object-fit: cover; object-position: 100% 0;" />

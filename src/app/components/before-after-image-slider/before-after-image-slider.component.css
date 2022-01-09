@@ -11,9 +11,9 @@
 }
 
 #draggableImageSlider::before {
-  content: "\2BC7";
+  content: '\f104';
+  font-family: "Font Awesome 5 Free";
   color: #d4ab41;
-  font-weight: 700;
   top: calc(50% - 30px);
   left: calc(50% - 40px);
   line-height: 48px;
@@ -24,15 +24,15 @@
 }
 
 #draggableImageSlider::after {
-  content: "\2BC8";
+  content: '\f105';
+  font-family: "Font Awesome 5 Free";
   color: #d4ab41;
-  font-weight: 700;
   top: calc(50% - 30px);
   left: calc(50% - 20px);
   line-height: 48px;
   font-size: 40px;
   margin: 0 0 0 0;
-  padding: 0 0 0 24px;
+  padding: 0 0 0 40px;
   position: absolute;
   text-align: center;
 }
