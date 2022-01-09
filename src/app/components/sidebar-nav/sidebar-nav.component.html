@@ -9,23 +9,39 @@
   
   <div id="sidenav-links" class="hide-nav-links">
     <ul>
-      <li (click)="toggleNavMenu()"><a href="#about">rólam</a></li>
-      <li (click)="toggleNavMenu()"><a href="#services">szolgáltatások</a></li>
-      <li (click)="toggleNavMenu()"><a [routerLink]="['/price']">árak</a></li>
-      <li (click)="toggleNavMenu()"><a href="#contact">kapcsolat</a></li>
+      <li (click)="toggleNavMenu()"><a class="link" href="#about">rólam</a></li>
+      <li (click)="toggleNavMenu()"><a class="link" href="#services">szolgáltatások</a></li>
+      <li (click)="toggleNavMenu()"><a class="link" [routerLink]="['/price']">árak</a></li>
+      <li (click)="toggleNavMenu()"><a class="link" href="#contact">kapcsolat</a></li>
     </ul>
 
-    <div class="sidenav-info-container">
-      <div class="phone-container">
-        <img class="header-info-icon" src="./../../../assets/phone.png" alt="clock">
-        <p>+36 30 555 9898</p>
-      </div>
 
-      <div class="clock-container">
-        <img class="header-info-icon" src="./../../../assets/clock.png" alt="clock">
-        <div class="hours-container">
-          <p>Péntek</p>
-          <p>9:00 - 16:00</p>
+    <div class="bottom-container">
+      <div class="sidenav-info-container">
+        <div class="phone-container">
+          <img class="header-info-icon" src="./../../../assets/phone.png" alt="clock">
+          <p>+36 30 555 9898</p>
+        </div>
+  
+        <div class="clock-container">
+          <img class="header-info-icon" src="./../../../assets/clock.png" alt="clock">
+          <div class="hours-container">
+            <p>Péntek</p>
+            <p>9:00 - 16:00</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="social-media-icons">
+        <div class="icon-container">
+          <a href="https://www.instagram.com/Nikolettdentalhigienikus/" target="_blank">
+            <img class="icon" src="./../../../assets/instagram-icon.png" alt="insta">
+          </a>
+        </div>
+        <div class="icon-container">
+          <a href="https://www.facebook.com/nikolettdentalhigienikus-106842131880275" target="_blank">
+            <img class="icon" src="./../../../assets/facebook-icon.png" alt="fb">
+          </a>
         </div>
       </div>
     </div>

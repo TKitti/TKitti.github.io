@@ -1,9 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff3e6;
+}
+
 .contact-elements-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 50px 0 80px 0;
-  background-color: #fff3e6;
+  padding: 50px 0 30px 0;
   border-radius: 50% 50% 50% 50% / 3% 3% 0% 0%;
+}
+
+.social-media-icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.icon-container {
+  border: 1px solid #8a888b;
+  border-radius: 50%;
+  padding: 15px;
+  transition: transform .2s; /* Animation */
+}
+
+.icon-container:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+
+
+
+/* ===================== 1024px or wider screen =============================== */
+@media screen and (min-width:1024px) {
+  .social-media-icons {
+    width: 20%;
+  }
 }
