@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DentalServiceService } from 'src/app/services/dental-service.service';
 import { DentalServiceModel } from 'src/app/models/DentalServiceModel';
@@ -8,7 +8,7 @@ import { DentalServiceModel } from 'src/app/models/DentalServiceModel';
   templateUrl: './service-details.component.html',
   styleUrls: ['./service-details.component.css']
 })
-export class ServiceDetailsComponent implements OnInit {
+export class ServiceDetailsComponent implements OnInit, AfterViewInit {
   currentService: DentalServiceModel;
 
   constructor(private route: ActivatedRoute, private dentalService: DentalServiceService) { }
@@ -17,5 +17,9 @@ export class ServiceDetailsComponent implements OnInit {
     this.dentalService.getDentalServiceData().subscribe(data => {
       this.currentService = data.find(service => service.id == this.route.snapshot.params.id);
     });
+  }
+
+  ngAfterViewInit() {
+    window.scrollTo(0, 0);
   }
 }
