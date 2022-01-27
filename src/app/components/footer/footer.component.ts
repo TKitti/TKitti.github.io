@@ -26,7 +26,7 @@ export class FooterComponent implements OnInit {
     image: "email",
     imageSrc: "../../../assets/email.png",
     firstLine: "Írj nekünk!", 
-    secondLine: "Dentalhygiene.Budapest@gmail.com", 
+    secondLine: "dentalhygiene.budapest@gmail.com", 
     thirdLine: "" 
   }
 
