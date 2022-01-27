@@ -2,7 +2,8 @@ export interface DentalServiceModel {
   id: string;
   title: string;
   content: string;
-  imageSrc: string;
+  imageSrcForDetail: string;
+  imageSrcForMainPage: string;
   beforeImageSrc: string;
   afterImageSrc: string;
 }
