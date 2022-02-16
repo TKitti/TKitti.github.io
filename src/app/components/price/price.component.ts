@@ -9,12 +9,17 @@ import { PriceService } from 'src/app/services/price.service';
 })
 export class PriceComponent implements OnInit, AfterViewInit {
   prices:PriceModel[] = [];
+  packagePrices:PriceModel[] = [];
 
   constructor(private priceService: PriceService) { }
 
   ngOnInit() {
     this.priceService.getPriceData().subscribe(data => {
       this.prices = data;
+    });
+
+    this.priceService.getPackagePriceData().subscribe(data => {
+      this.packagePrices = data;
     });
   }
 

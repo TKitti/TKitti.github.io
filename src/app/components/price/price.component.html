@@ -8,4 +8,12 @@
   </li>
 </ul>
 
+<p class="packages">Csomagajánlatok</p>
+
+<ul class="price-card-container">
+  <li *ngFor="let price of packagePrices" class="price-card">
+    <app-price-card [priceInfo]="price"></app-price-card>
+  </li>
+</ul>
+
 <app-footer></app-footer>

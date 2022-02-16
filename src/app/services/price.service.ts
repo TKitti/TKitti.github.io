@@ -14,4 +14,8 @@ export class PriceService {
   public getPriceData(): Observable<PriceModel[]> {
     return this.http.get<PriceModel[]>("../../assets/pricesData.json");
   }
+
+  public getPackagePriceData(): Observable<PriceModel[]> {
+    return this.http.get<PriceModel[]>("../../assets/packagePricesData.json");
+  }
 }
