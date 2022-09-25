@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
     image: "phone",
     imageSrc: "../../../assets/phone.png",
     firstLine: "Hívj minket!", 
-    secondLine: "+36 30 844 5446", 
+    secondLine: "+36 30 207 0712", 
     thirdLine: "" 
   }
 
