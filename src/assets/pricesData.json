@@ -1,58 +1,58 @@
 [
   {
     "id": "consultation",
-    "service": "Konzultáció (teljes körű szájápolási szaktanácsadás)", 
+    "service": "Konzultáció (teljes körű szájápolási szaktanácsadás)",
     "price": "5.000",
     "icon": "tooth-icon-6.png",
     "hasServiceDescription": false
   },
-  { 
+  {
     "id": "whitening",
-    "service": "Professzionális fogfehérítés (polírozás és fehérítés)", 
+    "service": "Professzionális fogfehérítés (polírozás és fehérítés)",
     "price": "80.000",
     "icon": "tooth-icon-1.png",
     "hasServiceDescription": true
   },
   {
     "id": "teeth-cleaning",
-    "service": "Professzionális fogkőeltávolítás", 
+    "service": "Professzionális fogkőeltávolítás",
     "price": "20.000",
     "icon": "tooth-icon-5.png",
     "hasServiceDescription": true
   },
   {
     "id": "teeth-cleaning-under-age-14",
-    "service": "Professzionális fogkőeltávolítás 14 év alatt (plakkfestés, polírozás, fogmosási tanácsadás)", 
+    "service": "Professzionális fogkőeltávolítás 14 év alatt (plakkfestés, polírozás, fogmosási tanácsadás)",
     "price": "10.000",
     "icon": "tooth-icon-7.png",
     "hasServiceDescription": false
   },
-  { 
+  {
     "id": "airflow",
-    "service": "Airflow", 
+    "service": "Airflow",
     "price": "10.000",
     "icon": "tooth-icon-2.png",
     "hasServiceDescription": true
   },
-  { 
+  {
     "id": "hyaluronic-acid-treatment",
-    "service": "Hyaluronsavas kezelés", 
+    "service": "Hyaluronsavas kezelés",
     "price": "8.000",
     "icon": "tooth-icon-4.png",
     "hasServiceDescription": true
   },
-  
-  { 
+
+  {
     "id": "dental-enamel-protective-treatment",
-    "service": "Fogzománcvédő kezelés (Tooth Mousse)", 
-    "price": "5.000",
+    "service": "Fogzománcvédő kezelés",
+    "price": "15.000",
     "icon": "tooth-icon-2.png",
     "hasServiceDescription": true
   },
-  { 
+  {
     "id": "sensitive-teeth-treatment",
-    "service": "Fogérzékenységet csökkentő kezelés", 
-    "price": "5.000",
+    "service": "Fogérzékenységet csökkentő fognyaki kezelés",
+    "price": "15.000",
     "icon": "tooth-icon-3.png",
     "hasServiceDescription": true
   }
